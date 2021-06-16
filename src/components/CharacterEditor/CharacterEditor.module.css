@@ -1,13 +1,28 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  margin: 0 auto;
+  position: relative;
+}
+.characterEditor::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background-color: hsl(180deg, 25%, 92%);
 }
 
 .maxWidthWrapper {
+  max-width: 1024px;
+  width: 100%;
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +39,14 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  /* right: 0; */
+  top: 128px;
+  right: 0;
+  height: 750px;
+  /* max-width: 45%; */
 }
 
 .controlColumn {
+  width: 50%;
 }
